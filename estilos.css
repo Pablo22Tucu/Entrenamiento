@@ -131,3 +131,42 @@ body.night-mode #toggle-mode:hover {
     font-size: 18px; /* Ajusta este valor según sea necesario */
   }    
 }
+
+/* opciones rutinas hombres */
+.foto{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.opcion-rutinas {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.op {
+  text-decoration: none;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Color de fondo más oscuro para mayor contraste en modo nocturno */
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+body:not(.night-mode) .op {
+  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo más claro para mayor contraste en modo claro */
+  color: #000000;
+}
+
+.texto-v {
+  font-size: 20px;
+  font-weight: bold;
+}
