@@ -1,0 +1,113 @@
+body {
+  background-image: url('../imagenes/v.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#bodyOp{
+  background-image: url('../imagenes/v.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#bodyOpm{
+  background-image: url('../imagenes/m.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.contenedor-v {
+  backdrop-filter: blur(5px);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+.contenedor-rutina {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1px);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+.opcion-rutinas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.op {
+  text-decoration: none;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.7); /* Color de fondo más oscuro para mayor contraste en modo nocturno */
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+}
+.op:hover {
+  background: rgba(0, 0, 0, 0.9); /* Color de fondo más oscuro para mayor contraste en modo nocturno */
+}
+.texto-v {
+  font-size: 20px;
+  font-weight: bold;
+}
+.volver{
+  text-decoration: none;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+}
+.volver:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+.nombre {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+table {
+  margin: 2px auto;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 8px 5px;    
+}
+th, td {
+  padding: 5px;
+}
+th {
+  background: rgba(0, 0, 0, 0.7); /* Color de fondo más oscuro para mayor contraste en modo nocturno */
+  color: #ffffff;
+  border-radius: 10px;
+}

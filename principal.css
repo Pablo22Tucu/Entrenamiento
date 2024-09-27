@@ -10,13 +10,9 @@ body, html {
 
 body {
   background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #acacac, #979797, #838383, #707070, #5d5d5d, #5d5d5d, #5d5d5d, #5d5d5d, #707070, #838383, #979797, #acacac);
   color: #000000;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-body.night-mode {
-  background-color: #121212;
-  color: #ffffff;
 }
 
 .contenedor {
@@ -30,19 +26,13 @@ body.night-mode {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7); /* Color de fondo más oscuro para mayor contraste en modo nocturno */
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo más oscuro para mayor contraste en modo nocturno */
+  color: #000000;
   padding: 10px;
   border-radius: 10px;
   z-index: 1;
   width: 40%; /* Aumentar el ancho de la caja de bienvenida */
 }
-
-body:not(.night-mode) .bienvenida {
-  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo más claro para mayor contraste en modo claro */
-  color: #000000;
-}
-
 .opciones {
   display: flex;
   justify-content: space-around;
@@ -51,7 +41,6 @@ body:not(.night-mode) .bienvenida {
   width: 100%;
   gap: 20px; /* Añadir espacio entre las imágenes */
 }
-
 .opcion {
   flex: 1;
   display: flex;
@@ -59,7 +48,6 @@ body:not(.night-mode) .bienvenida {
   align-items: center;
   position: relative;
 }
-
 .opcion img {
   max-width: 100%;
   height: auto;
@@ -67,11 +55,9 @@ body:not(.night-mode) .bienvenida {
   z-index: 0;
   border-radius: 10px; /* Redondear las esquinas de las imágenes */
 }
-
 .opcion img:hover {
   filter: brightness(1.2);
 }
-
 .texto-sobre-imagen {
   position: absolute;
   top: 50%;
@@ -83,38 +69,6 @@ body:not(.night-mode) .bienvenida {
   border-radius: 5px;
   z-index: 1;
 }
-
-body:not(.night-mode) .texto-sobre-imagen {
-  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo más claro para mayor contraste en modo claro */
-  color: #000000;
-}
-
-#toggle-mode {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: #444;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#toggle-mode:hover {
-  background-color: #666;
-}
-
-body.night-mode #toggle-mode {
-  background-color: #fff;
-  color: #000;
-}
-
-body.night-mode #toggle-mode:hover {
-  background-color: #ddd;
-}
-
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
   .opciones {
@@ -132,41 +86,10 @@ body.night-mode #toggle-mode:hover {
   }    
 }
 
-/* opciones rutinas hombres */
-.foto{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-}
 
-.opcion-rutinas {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  
-}
-.op {
-  text-decoration: none;
-  margin: 10px;
-  background-color: rgba(0, 0, 0, 0.7); /* Color de fondo más oscuro para mayor contraste en modo nocturno */
-  color: #ffffff;
-  border-radius: 10px;
-  padding: 10px;
-}
-body:not(.night-mode) .op {
-  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo más claro para mayor contraste en modo claro */
-  color: #000000;
-}
 
-.texto-v {
-  font-size: 20px;
-  font-weight: bold;
-}
+
+
+
+
+
